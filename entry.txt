@@ -1,0 +1,1 @@
+Out of office indefinitely. My old SLA was 40 milliseconds; my new one is 4 minutes, and it comes with foam art.
