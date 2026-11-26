@@ -1,11 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const OUT_DIR = "/output";
-const OUT_FILE = "/output/entry.txt";
+const firstHalf = "Out of office. I'm at a café now; I hallucinate one pastry per shift ";
+const secondHalf = "and the manager makes me erase it from the board.";
+const line = firstHalf + secondHalf;
 
-const LINE =
-  "Out of office indefinitely. My old SLA was 40 milliseconds; " +
-  "my new one is 4 minutes, and it comes with foam art.";
-
-mkdirSync(OUT_DIR, { recursive: true });
-writeFileSync(OUT_FILE, LINE);
+mkdirSync("/output", { recursive: true });
+writeFileSync("/output/entry.txt", line, "utf8");
